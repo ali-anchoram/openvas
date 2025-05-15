@@ -58,7 +58,7 @@ services:
       - redis_socket_vol:/run/redis/
 
   pg-gvm:
-    image: greenbone/pg-gvm:stable
+    image: greenbone/pg-gvm-build:stable
     restart: on-failure
     volumes:
       - psql_data_vol:/var/lib/postgresql
@@ -166,7 +166,7 @@ services:
           - openvasd
 
   ospd-openvas:
-    image: greenbone/ospd-openvas:stable
+    image: registry.community.greenbone.net/community/ospd-openvas:stable
     restart: on-failure
     hostname: ospd-openvas.local
     cap_add:
