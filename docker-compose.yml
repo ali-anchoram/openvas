@@ -24,7 +24,7 @@ services:
       - cert_data_vol:/mnt
 
   dfn-cert-data:
-    image: greenbone/dfn-cert-data
+    image: registry.community.greenbone.net/community/dfn-cert-data
     volumes:
       - cert_data_vol:/mnt
     depends_on:
