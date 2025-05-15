@@ -47,7 +47,7 @@ services:
       - data-objects
 
   gpg-data:
-    image: greenbone/gpg-data
+    image: registry.community.greenbone.net/community/gpg-data
     volumes:
       - gpg_data_vol:/mnt
 
