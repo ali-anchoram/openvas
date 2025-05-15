@@ -19,7 +19,7 @@ services:
       - scap_data_vol:/mnt
 
   cert-bund-data:
-    image: greenbone/cert-bund-data
+    image: registry.community.greenbone.net/community/cert-bund-data
     volumes:
       - cert_data_vol:/mnt
 
