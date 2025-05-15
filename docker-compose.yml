@@ -31,7 +31,7 @@ services:
       - cert-bund-data
 
   data-objects:
-    image: greenbone/data-objects
+    image: registry.community.greenbone.net/community/data-objects
     environment:
       FEED_RELEASE: "24.10"
     volumes:
